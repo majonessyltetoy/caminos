@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caminos Bogotá — Sitio</title>
+  <meta name="description" content="Sitio mínimo para la app independiente Caminos Bogotá.">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1f2937;
+      --muted: #6b7280;
+      --link: #2563eb;
+      --card: #f8fafc;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f14;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --link: #60a5fa;
+        --card: #111827;
+        --border: #1f2937;
+      }
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 10px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 24px 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+    .lang { font-weight: 600; margin-top: 24px; text-transform: uppercase; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Caminos Bogotá</h1>
+    <p class="lead">App independiente para reservar y explorar senderos y humedales de Bogotá. No afiliada a la EAAB.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Soporte</h2>
+        <p>¿Necesitas ayuda? Visita la página de soporte.</p>
+        <p><a href="support.html">Ir a Soporte</a></p>
+      </div>
+      <div class="card">
+        <h2>Privacidad</h2>
+        <p>Lee cómo tratamos tus datos y la información de suscripción.</p>
+        <p><a href="privacy.html">Ver Política de Privacidad</a></p>
+      </div>
+      <div class="card">
+        <h2>EULA</h2>
+        <p>Términos de uso estándar de Apple.</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Abrir EULA</a></p>
+      </div>
+    </div>
+
+    <div class="lang">English</div>
+    <p class="lead">Independent app for booking and exploring Bogotá’s trails and wetlands. Not affiliated with EAAB.</p>
+    <div class="cards">
+      <div class="card">
+        <h2>Support</h2>
+        <p>Need help? Visit the support page.</p>
+        <p><a href="support.html">Go to Support</a></p>
+      </div>
+      <div class="card">
+        <h2>Privacy</h2>
+        <p>Read our data and subscription policy.</p>
+        <p><a href="privacy.html">View Privacy Policy</a></p>
+      </div>
+      <div class="card">
+        <h2>EULA</h2>
+        <p>Apple’s standard Terms of Use.</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Open EULA</a></p>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Bjørn-Andreas Lamo — Caminos Bogotá
+    </footer>
+  </div>
+</body>
+</html>
